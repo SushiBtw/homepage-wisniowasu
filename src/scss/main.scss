@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
 @import url('https://fonts.googleapis.com/css?family=Raleway:500,600,700&display=swap');
-@import "../../node_modules/progressive-image.js/dist/progressive-image.css";
-@import "./footer.scss";
+@import '../../node_modules/progressive-image.js/dist/progressive-image.css';
+@import './footer.scss';
 
 html {
   height: 100%;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 14px;
+  padding: env(safe-area-inset);
 }
 
 body {
@@ -35,8 +36,6 @@ h3 {
   font-size: 15px;
   font-weight: 400;
 }
-
-
 
 .section_topic {
   margin: 100px 20px 20px 20px;
@@ -77,14 +76,13 @@ h3 {
   }
 }
 
-
 .title_box {
   height: 250px;
   background: linear-gradient(270deg, #ff7f66, #de1444);
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
 
   &_text {
     width: 100%;
@@ -93,7 +91,7 @@ h3 {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     vertical-align: text-bottom;
-    margin: 0px 50px 10px 50px;
+    margin: 0 50px 10px 50px;
     font-weight: 600;
     color: whitesmoke;
     animation: show-fromleft 0.6s ease-in-out;
@@ -110,10 +108,9 @@ h3 {
 
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
-
 
 .fullpadding {
   max-width: 1500px;
